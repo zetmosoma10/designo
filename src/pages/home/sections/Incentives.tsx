@@ -1,13 +1,14 @@
+import IncentiveGrid from "../../../components/IncentiveGrid";
 import Incentive from "../components/Incentive";
 import { incentivesData } from "../constance";
 
 const Incentives = () => {
   return (
-    <section className="max-container grid gap-y-20 md:gap-y-8 lg:gap-x-8 lg:grid-cols-3 ">
+    <IncentiveGrid>
       {incentivesData.map((item) => (
         <Incentive key={item.text} {...item} />
       ))}
-    </section>
+    </IncentiveGrid>
   );
 };
 
