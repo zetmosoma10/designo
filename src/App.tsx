@@ -1,6 +1,10 @@
+import Incentive from "./pages/home/components/Incentive";
+
 function App() {
   return (
-    <h1 className="text-peach text-3xl font-bold underline">Hello world!</h1>
+    <div>
+      <Incentive />
+    </div>
   );
 }
 
