@@ -21,6 +21,11 @@
 @layer components {
   .btn {
     @apply font-medium text-base bg-white text-dark_grey inline-block tracking-[1px] pt-[18px] pb-[16px] px-6 
-    rounded-lg cursor-pointer hover:bg-light_peach hover:text-white;
+    rounded-lg cursor-pointer hover:bg-light_peach hover:text-white text-nowrap;
+  }
+
+  .bgCircle {
+    background-image: url("./assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-position-y: center;
   }
 }
