@@ -1,9 +1,9 @@
-import Incentives from "./pages/home/sections/Incentives";
+import IncentivesLocation from "./components/IncentivesLocation";
 
 function App() {
   return (
     <div className="">
-      <Incentives />
+      <IncentivesLocation />
     </div>
   );
 }
