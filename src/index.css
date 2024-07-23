@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply transition-all duration-150;
+}
+
 @layer base {
   body {
     font-family: "Jost", "sans-serif";
@@ -11,5 +15,12 @@
 
   .max-container {
     @apply max-w-[1110px] w-[95%] mx-auto;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-medium text-base bg-white text-dark_grey inline-block tracking-[1px] pt-[18px] pb-[16px] px-6 
+    rounded-lg cursor-pointer hover:bg-light_peach hover:text-white;
   }
 }
