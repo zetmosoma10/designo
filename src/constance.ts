@@ -7,3 +7,9 @@ export const incentiveLocationData = [
   { img: australiaImg, title: "AUSTRALIA" },
   { img: unitedKingdomImg, title: "UNITED KINGDOM" },
 ];
+
+export const navLinks = [
+  { link: "our company", to: "about" },
+  { link: "location", to: "location" },
+  { link: "contact", to: "contact" },
+];

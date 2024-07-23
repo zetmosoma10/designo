@@ -1,9 +1,10 @@
 import IncentivesLocation from "./components/IncentivesLocation";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="">
-      <IncentivesLocation />
+      <NavBar />
     </div>
   );
 }
