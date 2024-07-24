@@ -29,7 +29,7 @@ const Form = () => {
       <div className="w-full">
         <textarea className="custom-input" placeholder="Message"></textarea>
       </div>
-      <Button type="button" className="self-end px-12 ">
+      <Button type="button" className="self-center md:self-end px-12 ">
         Submit
       </Button>
     </form>
