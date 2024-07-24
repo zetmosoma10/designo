@@ -24,6 +24,12 @@
     rounded-lg cursor-pointer hover:bg-light_peach hover:text-white text-nowrap;
   }
 
+  .custom-input {
+    @apply w-full bg-transparent border-b outline-none pl-4 pb-3
+          text-base text-white placeholder:text-base placeholder:text-white 
+          placeholder:text-opacity-50 focus:border-b-[3px];
+  }
+
   .bgCircle {
     background-image: url("./assets/shared/desktop/bg-pattern-call-to-action.svg");
     background-position-y: center;
