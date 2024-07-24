@@ -1,15 +1,10 @@
-import React from "react";
 import DesktopImg from "../../../assets/about/desktop/image-world-class-talent-d.jpg";
 import MobileImg from "../../../assets/about/mobile/image-world-class-talent-m.jpg";
 import TabletImg from "../../../assets/about/tablet/image-world-class-talent-t.jpg";
 
-console.log(DesktopImg);
-console.log(MobileImg);
-console.log(TabletImg);
-
-const Card = () => {
+const TalentCard = () => {
   return (
-    <div className="grid lg:grid-cols-2 md:max-container md:rounded-3xl md:overflow-hidden">
+    <div className="card-container">
       <picture className="w-full block">
         <source media="(max-width:767px)" srcSet={MobileImg} />
         <source
@@ -19,10 +14,7 @@ const Card = () => {
         <source media="(min-width:1110px)" srcSet={DesktopImg} />
         <img className="w-full block" src={DesktopImg} alt="" />
       </picture>
-      <div
-        className="bgCircle bg-very_light_peach text-center lg:text-left py-20 px-6 md:px-14 md:py-16
-        lg:px-16 lg:flex lg:items-center lg:justify-center"
-      >
+      <div className="bgCircle card-body">
         <div>
           <h2 className="font-medium text-peach text-3xl md:text-4xl">
             World-class talent
@@ -46,4 +38,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default TalentCard;
