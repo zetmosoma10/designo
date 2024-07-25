@@ -64,4 +64,9 @@
     @apply bg-very_light_peach text-center lg:text-left py-20 px-6 md:px-14 md:py-16
         lg:px-16 lg:flex lg:items-center lg:justify-center;
   }
+
+  .arrow-right::after {
+    content: url("./assets/shared/desktop/icon-right-arrow.svg");
+    margin-left: 21px;
+  }
 }
