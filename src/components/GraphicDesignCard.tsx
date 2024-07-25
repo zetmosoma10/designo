@@ -1,16 +1,16 @@
 import React from "react";
 
-const AppDesignCard = () => {
+const GraphicDesignCard = () => {
   return (
     <div
-      className="relative bg-dark_grey py-[90px] md:py-[53px] lg:py-[100px] group flex items-center justify-center bg-appMobileImg  
-      md:bg-appTabletImg lg:bg-appDesktopImg 
+      className="relative bg-dark_grey py-[90px] md:py-[53px] lg:py-[100px] group flex items-center justify-center bg-graphicMobileImg  
+      md:bg-graphicTabletImg lg:bg-graphicDesktopImg 
       bg-center bg-cover rounded-3xl cursor-pointer"
     >
       <div className="custom-overlay"></div>
       <div className="text-white text-center z-10">
         <h3 className="font-medium text-3xl md:text-4xl tracking-[1.4px] md:tracking-[2px] uppercase">
-          App Designs
+          Graphic Designs
         </h3>
         <p className="arrow-right text-base tracking-[5px] uppercase mt-3 md:mt-6">
           view projects
@@ -20,4 +20,4 @@ const AppDesignCard = () => {
   );
 };
 
-export default AppDesignCard;
+export default GraphicDesignCard;

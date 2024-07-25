@@ -1,7 +1,7 @@
 const WebDesignCard = () => {
   return (
     <div
-      className="relative group flex items-center justify-center h-[500px] bg-webMobileImg  
+      className="relative bg-dark_grey py-[90px] md:py-[53px] group flex items-center justify-center bg-webMobileImg  
       md:bg-webTabletImg lg:bg-webDesktopLargeImg 
       bg-center bg-cover rounded-3xl cursor-pointer"
     >

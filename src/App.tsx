@@ -6,7 +6,7 @@ import DealCard from "./pages/about/components/DealCard";
 
 function App() {
   return (
-    <div className="p-10">
+    <div className="max-container">
       <DesignsShowGrid />
     </div>
   );
