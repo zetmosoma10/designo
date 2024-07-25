@@ -51,11 +51,6 @@
     }
   }
 
-  /* ABOUT */
-  /* .world-class-img {
-    background-image: url(./assets/about/desktop/image-world-class-talent.jpg);
-  } */
-
   .card-container {
     @apply grid lg:grid-cols-2 md:max-container md:rounded-3xl md:overflow-hidden;
   }
@@ -63,6 +58,11 @@
   .card-body {
     @apply bg-very_light_peach text-center lg:text-left py-20 px-6 md:px-14 md:py-16
         lg:px-16 lg:flex lg:items-center lg:justify-center;
+  }
+
+  /* Designs Card */
+  .custom-overlay {
+    @apply absolute top-0 left-0 w-full h-full group-hover:bg-peach rounded-3xl group-hover:bg-opacity-70;
   }
 
   .arrow-right::after {
