@@ -1,10 +1,13 @@
+import AppDesignCard from "./AppDesignCard";
 import WebDesignCard from "./WebDesignCard";
 
 const DesignsShowGrid = () => {
   return (
     <section className="grid">
       <WebDesignCard />
-      <div></div>
+      <div>
+        <AppDesignCard />
+      </div>
     </section>
   );
 };
