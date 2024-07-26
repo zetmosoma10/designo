@@ -1,11 +1,9 @@
-import SideBar from "./components/SideBar";
-import Hero from "./pages/home/sections/Hero";
-import MapComponent from "./pages/locations/components/MapComponent";
+import LocationDetails from "./pages/locations/components/LocationDetails";
 
 function App() {
   return (
     <div>
-      <MapComponent />
+      <LocationDetails />
     </div>
   );
 }
