@@ -1,10 +1,9 @@
-import DesignsShowGrid from "./components/DesignsShowGrid";
-import Contacts from "./pages/contact/sections/Contacts";
+import Hero from "./pages/home/sections/Hero";
 
 function App() {
   return (
-    <div>
-      <DesignsShowGrid />
+    <div className="">
+      <Hero />
     </div>
   );
 }

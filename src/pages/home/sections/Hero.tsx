@@ -5,8 +5,8 @@ import heroImg from "../../../assets/home/desktop/image-hero-phone.png";
 const Hero = () => {
   return (
     <section
-      className="bg-peach text-white grid lg:grid-cols-2 md:max-container md:rounded-3xl
-        pt-20 md:pt-[60px] lg:pt-0 lg:px-24"
+      className="hero-circle bg-peach text-white grid lg:grid-cols-2 md:max-container md:rounded-3xl
+        pt-20 md:pt-[60px] lg:pt-0 lg:px-24 overflow-hidden"
     >
       <div className="text-center lg:text-left lg:self-center px-6 md:px-14 lg:px-0 max-w-[600px] mx-auto lg:mx-0 lg:max-w-none">
         <h1 className="font-medium text-3xl md:5xl">
@@ -19,7 +19,11 @@ const Hero = () => {
         </p>
         <Button>LEARN MORE</Button>
       </div>
-      <img className="justify-self-center" src={heroImg} alt="" />
+      <img
+        className="justify-self-center mb-[-150px] sm:mb-[-200px] md:mb-[-250px] lg:mb-[-70px]"
+        src={heroImg}
+        alt=""
+      />
     </section>
   );
 };

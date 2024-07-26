@@ -51,6 +51,11 @@
     }
   }
 
+  .hero-circle {
+    background-image: url("./assets/home/desktop/bg-pattern-hero-home.svg");
+    background-repeat: no-repeat;
+  }
+
   .card-container {
     @apply grid lg:grid-cols-2 md:max-container md:rounded-3xl md:overflow-hidden;
   }
