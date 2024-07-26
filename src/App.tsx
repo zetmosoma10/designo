@@ -1,14 +1,10 @@
-import DesignCard from "./components/DesignCard";
-import WebDesignCard from "./components/WebDesignCard";
-import DesignsShowGrid from "./components/DesignsShowGrid";
-import AboutHero from "./pages/about/components/AboutHero";
-import DealCard from "./pages/about/components/DealCard";
+import SideBar from "./components/SideBar";
 import Hero from "./pages/home/sections/Hero";
 
 function App() {
   return (
     <div className="">
-      <Hero />
+      <SideBar />
     </div>
   );
 }
