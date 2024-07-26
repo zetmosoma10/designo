@@ -3,8 +3,8 @@ import React from "react";
 const LocationDetails = () => {
   return (
     <div
-      className="bg-very_light_peach text-center py-20 px-6 md:text-left
-        md:py-[88px] md:px-[74px] md:max-container md:rounded-3xl"
+      className="bg-very_light_peach  w-full text-center py-20 px-6 md:text-left
+        md:py-[88px] md:px-[74px] md:rounded-3xl"
     >
       <h2 className="text-peach font-medium text-3xl md:text-4xl">Canada</h2>
       <div className=" text-dark_grey mt-6 md:flex md:items-center md:space-x-[90px]">
