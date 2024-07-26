@@ -25,7 +25,7 @@ const Form = () => {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = (data: FieldValues) => {
-    //  toast(`${data.name} thanks for your support, we’ll get in touch shortly.`);
+    // toast(`${data.name} thanks for your support, we’ll get in touch shortly.`);
     reset();
   };
   return (
@@ -79,6 +79,7 @@ const Form = () => {
       <Button type="button" className="self-center md:self-end px-12 ">
         Submit
       </Button>
+      {/* <ToastContainer position="top-center" /> */}
     </form>
   );
 };
