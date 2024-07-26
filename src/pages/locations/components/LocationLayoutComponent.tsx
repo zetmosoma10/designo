@@ -4,12 +4,30 @@ import LocationDetails from "./LocationDetails";
 
 const LocationLayoutComponent = () => {
   return (
-    <div className="flex flex-col md:gap-8 md:max-container lg:flex-row lg:justify-self-start lg:items-center">
-      <div className=" md:rounded-3xl md:overflow-hidden lg:w-[350px]">
-        <MapComponent />
+    <section className="space-y-10 md:space-y-28  md:max-container lg:space-y-8">
+      <div className="location ">
+        <div className="order-1 lg:order-2 md:rounded-3xl md:overflow-hidden lg:w-[350px] ">
+          <MapComponent />
+        </div>
+        <div className="order-2 lg:order-1 w-full">
+          <LocationDetails />
+        </div>
       </div>
-      <LocationDetails />
-    </div>
+      <div className="location">
+        <div className=" md:rounded-3xl md:overflow-hidden lg:w-[350px]">
+          <MapComponent />
+        </div>
+        <LocationDetails />
+      </div>
+      <div className="location">
+        <div className="order-1 lg:order-2 md:rounded-3xl md:overflow-hidden lg:w-[350px]">
+          <MapComponent />
+        </div>
+        <div className="order-2 lg:order-1 w-full">
+          <LocationDetails />
+        </div>
+      </div>
+    </section>
   );
 };
 

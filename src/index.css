@@ -69,4 +69,9 @@
     content: url("./assets/shared/desktop/icon-right-arrow.svg");
     margin-left: 21px;
   }
+
+  /* Location Sec */
+  .location {
+    @apply flex flex-col md:gap-8 lg:flex-row lg:justify-self-start lg:items-center;
+  }
 }
