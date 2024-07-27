@@ -1,18 +1,21 @@
 import React from "react";
 import img from "../assets/app-design/desktop/image-loopstudios.jpg";
 
-const DesignCard = () => {
+interface Props {
+  img: string;
+  header: string;
+  text: string;
+}
+const DesignCard = ({ img, header, text }: Props) => {
   return (
     <article className="grid lg:grid-cols-1 rounded-3xl  overflow-hidden">
       <img className="w-full" src={img} alt="" />
       <div className=" bg-very_light_peach text-center p-8">
         <div>
           <h4 className="text-peach font-medium text-xl tracking-[5px]">
-            TRANSFER
+            {header}
           </h4>
-          <p className="text-dark_grey text-base mt-6">
-            Site for low-cost money transfers and sending money within seconds
-          </p>
+          <p className="text-dark_grey text-base mt-6">{text}</p>
         </div>
       </div>
     </article>
