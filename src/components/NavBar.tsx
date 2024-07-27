@@ -6,7 +6,7 @@ import closeIcon from "../assets/shared/mobile/icon-close.svg";
 import SideBar from "./SideBar";
 
 const NavBar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const showNav = () => {
     setToggle(true);
