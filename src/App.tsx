@@ -7,11 +7,7 @@ import LocationPage from "./pages/locations/LocationPage";
 import WebDesignPage from "./pages/web-design/WebDesignPage";
 
 function App() {
-  return (
-    <div className="">
-      <ContactPage />
-    </div>
-  );
+  return <div className="">hello</div>;
 }
 
 export default App;
