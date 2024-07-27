@@ -1,16 +1,22 @@
-import Incentive from "./pages/home/components/Incentive";
-import Hero from "./pages/home/sections/Hero";
-import imgIcon from "./assets/home/desktop/illustration-resourceful.svg";
-import DesignsHeader from "./components/DesignsHeaders/DesignsHeader";
-import DesignsTitle from "./components/DesignsHeaders/DesignsTitle";
-import DesingsText from "./components/DesignsHeaders/DesingsText";
+import DesignCard from "./components/DesignCard";
+import DesignMultiGrid from "./components/DesignMultiGrid";
 import NavBar from "./components/NavBar";
+import Hero from "./pages/home/sections/Hero";
 
 function App() {
   return (
     <div className="">
-      <NavBar />
-      <Hero />
+      <DesignMultiGrid>
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+      </DesignMultiGrid>
     </div>
   );
 }

@@ -12,6 +12,9 @@ export default {
         light_grey: "#F1F3F5",
         white: "#fff",
       },
+      gridTemplateColumns: {
+        "auto-fill": "repeat(auto-fill, minmax(300px, 1fr))",
+      },
       backgroundImage: {
         appMobileImg: 'url("./assets/home/mobile/image-app-design.jpg")',
         appTabletImg: 'url("./assets/home/tablet/image-app-design.jpg")',
