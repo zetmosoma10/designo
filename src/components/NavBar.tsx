@@ -1,8 +1,8 @@
+import { useEffect, useState } from "react";
 import { navLinks } from "../constance";
 import logo from "../assets/shared/desktop/logo-dark.png";
 import hamburger from "../assets/shared/mobile/icon-hamburger.svg";
 import closeIcon from "../assets/shared/mobile/icon-close.svg";
-import { useState } from "react";
 import SideBar from "./SideBar";
 
 const NavBar = () => {
@@ -15,6 +15,19 @@ const NavBar = () => {
   const removeNav = () => {
     setToggle(false);
   };
+
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    // Cleanup function to reset overflow when component unmounts
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [toggle]);
 
   return (
     <>
@@ -54,7 +67,7 @@ const NavBar = () => {
           </div>
         </div>
         {toggle && (
-          <div className="absolute top-[58px] left-0 w-full">
+          <div className="absolute top-[58px] left-0 w-full md:hidden">
             <SideBar />
           </div>
         )}
