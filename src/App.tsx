@@ -1,10 +1,11 @@
-import DesignCard from "./components/DesignCard";
-import DesignMultiGrid from "./components/DesignMultiGrid";
-import NavBar from "./components/NavBar";
-import Hero from "./pages/home/sections/Hero";
+import HomePage from "./pages/home/HomePage";
 
 function App() {
-  return <div className="">hello</div>;
+  return (
+    <div className="">
+      <HomePage />
+    </div>
+  );
 }
 
 export default App;
