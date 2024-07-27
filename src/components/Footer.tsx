@@ -9,7 +9,7 @@ import { FaPinterest } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-[253px] pb-16 md:pt-[166px] md:pb-20 lg:pt-36 lg:pb-[72px]">
+    <footer className="bg-black text-white pt-[253px] pb-16 md:pt-[166px] md:pb-20 lg:pt-36 lg:pb-[72px] z">
       <div className="max-container flex flex-col items-center md:block text-center md:text-left">
         <div className="md:flex md:items-center md:justify-between md:border-b md:border-b-white md:pb-10 md:border-opacity-10">
           <a className="pb-8 inline-block md:pb-0" href="#">

@@ -9,11 +9,13 @@ const Layout = () => {
     <div>
       <NavBar />
       <Outlet />
-      <div>
-        <div>
+      <div className="grid mt-[120px] ">
+        <div className="max-container mb-[-150px] lg:mb-[-100px]">
           <CTA />
         </div>
-        <Footer />
+        <div className="-z-20">
+          <Footer />
+        </div>
       </div>
     </div>
   );
