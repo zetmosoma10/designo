@@ -1,4 +1,3 @@
-import React from "react";
 import MapComponent from "../components/MapComponent";
 import LocationDetails from "../components/LocationDetails";
 
