@@ -4,21 +4,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./pages/home/sections/Hero";
 
 function App() {
-  return (
-    <div className="">
-      <DesignMultiGrid>
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-      </DesignMultiGrid>
-    </div>
-  );
+  return <div className="">hello</div>;
 }
 
 export default App;
