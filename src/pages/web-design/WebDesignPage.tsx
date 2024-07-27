@@ -1,4 +1,3 @@
-import React from "react";
 import DesignCard from "../../components/DesignCard";
 import DesignMultiGrid from "../../components/DesignMultiGrid";
 import DesignsHeader from "../../components/DesignsHeaders/DesignsHeader";
@@ -25,12 +24,14 @@ const WebDesignPage = () => {
       <div className="grid lg:grid-cols-2 gap-x-7 gap-y-6 max-container">
         <DesignShowCard
           title="Graphic Designs"
+          to="/graphic-designs"
           mobileBgImg="bg-graphicMobileImg"
           tabletBgImg="md:bg-graphicTabletImg"
           desktopBgImg="lg:bg-graphicDesktopImg"
         />
         <DesignShowCard
           title="App Designs"
+          to="/app-designs"
           mobileBgImg="bg-appMobileImg"
           tabletBgImg="md:bg-appTabletImg"
           desktopBgImg="lg:bg-appDesktopImg"

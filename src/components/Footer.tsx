@@ -1,29 +1,29 @@
-import React from "react";
-import logo from "../assets/shared/desktop/logo-light.png";
-import { navLinks } from "../constance";
-import { FaFacebookSquare } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
-import { IoLogoInstagram } from "react-icons/io5";
+import { FaFacebookSquare } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io";
+import { IoLogoInstagram } from "react-icons/io5";
+import { Link, NavLink } from "react-router-dom";
+import { navLinks } from "../constance";
+import logo from "../assets/shared/desktop/logo-light.png";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white pt-[253px] pb-16 md:pt-[166px] md:pb-20 lg:pt-36 lg:pb-[72px] z">
       <div className="max-container flex flex-col items-center md:block text-center md:text-left">
         <div className="md:flex md:items-center md:justify-between md:border-b md:border-b-white md:pb-10 md:border-opacity-10">
-          <a className="pb-8 inline-block md:pb-0" href="#">
+          <Link to="/" className="pb-8 inline-block md:pb-0">
             <img className="w-[196px]" src={logo} alt="" />
-          </a>
+          </Link>
           <ul className="md:flex md:items-center mt-8 md:mt-0 space-y-8 md:space-y-0 md:space-x-10">
             {navLinks.map((item) => (
               <li
                 className="hover:underline transition-all duration-150"
                 key={item.link}
               >
-                <a className="text-base tracking-[2px]" href="#">
+                <NavLink to={item.to} className="text-base tracking-[2px]">
                   {item.link}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>

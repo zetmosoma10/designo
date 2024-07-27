@@ -1,19 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface Props {
   children: React.ReactNode;
   className?: string;
+  to: string;
   type?: "link" | "button";
 }
 
-const Button = ({ children, className, type = "link" }: Props) => {
+const Button = ({ children, className, to, type = "link" }: Props) => {
   if (type === "button")
     return <button className={`btn ${className}`}>{children}</button>;
   if (type === "link")
     return (
-      <a href="#" className={`btn ${className}`}>
+      <Link to={to} className={`btn ${className}`}>
         {children}
-      </a>
+      </Link>
     );
 };
 

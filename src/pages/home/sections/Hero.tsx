@@ -17,7 +17,7 @@ const Hero = () => {
           fully responsive websites, apps, and engaging brand experiences. Find
           out more about our services.
         </p>
-        <Button>LEARN MORE</Button>
+        <Button to="/about">LEARN MORE</Button>
       </div>
       <img
         className="justify-self-center mb-[-150px] sm:mb-[-200px] md:mb-[-250px] lg:mb-[-70px]"

@@ -13,7 +13,10 @@ const IncentiveLocation = ({ img, title }: Props) => {
       </div>
       <div>
         <h4 className="font-medium text-xl tracking-[5px] mb-8">{title}</h4>
-        <Button className="bg-peach hover:bg-light_peach text-white">
+        <Button
+          to="/locations"
+          className="bg-peach hover:bg-light_peach text-white"
+        >
           SEE LOCATION
         </Button>
       </div>

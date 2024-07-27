@@ -1,5 +1,6 @@
 import React from "react";
 import { navLinks } from "../constance";
+import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -7,7 +8,7 @@ const SideBar = () => {
       <ul className="bg-black text-white space-y-8 p-12 px-6 ">
         {navLinks.map((item) => (
           <li className="active:underline" key={item.link}>
-            <a href="#">{item.link}</a>
+            <NavLink to={item.to}>{item.link}</NavLink>
           </li>
         ))}
       </ul>

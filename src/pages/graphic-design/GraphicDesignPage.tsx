@@ -25,12 +25,14 @@ const GraphicDesignPage = () => {
       <div className="grid lg:grid-cols-2 gap-x-7 gap-y-6 max-container">
         <DesignShowCard
           title="Web Designs"
+          to="/web-designs"
           mobileBgImg="bg-webMobileImg"
           tabletBgImg="md:bg-webTabletImg"
           desktopBgImg="lg:bg-webDesktopSmallImg"
         />
         <DesignShowCard
           title="App Designs"
+          to="/app-designs"
           mobileBgImg="bg-appMobileImg"
           tabletBgImg="md:bg-appTabletImg"
           desktopBgImg="lg:bg-appDesktopImg"

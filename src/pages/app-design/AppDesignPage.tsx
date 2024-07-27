@@ -24,12 +24,14 @@ const AppDesignPage = () => {
       <div className="grid lg:grid-cols-2 gap-x-7 gap-y-6 max-container">
         <DesignShowCard
           title="Web Designs"
+          to="/web-designs"
           mobileBgImg="bg-webMobileImg"
           tabletBgImg="md:bg-webTabletImg"
           desktopBgImg="lg:bg-webDesktopSmallImg"
         />
         <DesignShowCard
           title="Graphic Designs"
+          to="/graphic-designs"
           mobileBgImg="bg-graphicMobileImg"
           tabletBgImg="md:bg-graphicTabletImg"
           desktopBgImg="lg:bg-graphicDesktopImg"

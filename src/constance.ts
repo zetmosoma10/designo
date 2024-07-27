@@ -10,6 +10,6 @@ export const incentiveLocationData = [
 
 export const navLinks = [
   { link: "our company", to: "about" },
-  { link: "location", to: "location" },
-  { link: "contact", to: "contact" },
+  { link: "location", to: "locations" },
+  { link: "contact", to: "contacts" },
 ];

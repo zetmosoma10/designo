@@ -4,6 +4,7 @@ import logo from "../assets/shared/desktop/logo-dark.png";
 import hamburger from "../assets/shared/mobile/icon-hamburger.svg";
 import closeIcon from "../assets/shared/mobile/icon-close.svg";
 import SideBar from "./SideBar";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
@@ -33,19 +34,19 @@ const NavBar = () => {
     <>
       <nav className="relative my-8 md:my-12">
         <div className="max-container flex items-center justify-between">
-          <a href="#">
+          <Link to="/">
             <img className="w-[196px]" src={logo} alt="" />
-          </a>
+          </Link>
           <div className="flex items-center">
             <ul className="hidden md:flex md:items-center uppercase gap-10">
               {navLinks.map((item) => (
                 <li key={item.link}>
-                  <a
+                  <NavLink
                     className="text-dark_grey text-sm tracking-[2px] hover:underline"
-                    href="#"
+                    to={item.to}
                   >
                     {item.link}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>

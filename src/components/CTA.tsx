@@ -17,7 +17,9 @@ const CTA = () => {
             how our expertise can help your business grow.
           </p>
         </div>
-        <Button className="uppercase mt-8 lg:mt-0">Get in Touch</Button>
+        <Button to="/contacts" className="uppercase mt-8 lg:mt-0">
+          Get in Touch
+        </Button>
       </div>
     </div>
   );
