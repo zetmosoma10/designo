@@ -4,16 +4,13 @@ import imgIcon from "./assets/home/desktop/illustration-resourceful.svg";
 import DesignsHeader from "./components/DesignsHeaders/DesignsHeader";
 import DesignsTitle from "./components/DesignsHeaders/DesignsTitle";
 import DesingsText from "./components/DesignsHeaders/DesingsText";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="">
-      <DesignsHeader>
-        <DesignsTitle>Heading</DesignsTitle>
-        <DesingsText>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, animi?
-        </DesingsText>
-      </DesignsHeader>
+      <NavBar />
+      <Hero />
     </div>
   );
 }
