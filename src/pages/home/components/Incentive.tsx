@@ -10,7 +10,7 @@ const Incentive = ({ img, title, text }: Props) => {
       className="flex flex-col gap-12 items-center  text-dark_grey text-center
         md:flex-row md:text-left lg:text-center lg:flex-col"
     >
-      <div className="bg-[#5D0202] bg-opacity-5 rounded-full">
+      <div className="incentive-circle">
         <img src={img} alt="" />
       </div>
       <div>

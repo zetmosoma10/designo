@@ -56,6 +56,11 @@
     background-repeat: no-repeat;
   }
 
+  .incentive-circle {
+    background-image: url("./assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: no-repeat;
+  }
+
   .card-container {
     @apply grid lg:grid-cols-2 md:max-container md:rounded-3xl md:overflow-hidden;
   }
