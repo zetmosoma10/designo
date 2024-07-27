@@ -1,6 +1,6 @@
 import React from "react";
-import MapComponent from "./MapComponent";
-import LocationDetails from "./LocationDetails";
+import MapComponent from "../components/MapComponent";
+import LocationDetails from "../components/LocationDetails";
 
 const LocationLayoutComponent = () => {
   return (
