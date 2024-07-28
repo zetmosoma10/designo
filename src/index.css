@@ -42,6 +42,10 @@
     background-position-x: 0;
   }
 
+  .no-scroll {
+    overflow: hidden;
+  }
+
   @media screen and (min-width: 1110px) {
     .bg-contact-circle {
       background-image: url("./assets/contact/desktop/bg-pattern-hero-desktop.svg");

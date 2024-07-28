@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../../../components/Button";
 import heroImg from "../../../assets/home/desktop/image-hero-phone.png";
 
@@ -6,7 +5,7 @@ const Hero = () => {
   return (
     <section
       className="hero-circle bg-peach text-white grid lg:grid-cols-2 lg:h-[600px] md:max-container md:rounded-3xl
-        pt-20 md:pt-[60px] lg:pt-0 lg:px-24 overflow-hidden"
+        pt-20 lg:pt-0 lg:px-24 overflow-hidden"
     >
       <div className="text-center lg:text-left lg:self-center px-6 md:px-14 lg:px-0 max-w-[600px] mx-auto lg:mx-0 lg:max-w-none">
         <h1 className="font-medium text-3xl md:5xl">

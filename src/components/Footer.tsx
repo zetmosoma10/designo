@@ -27,7 +27,7 @@ const Footer = () => {
                   style={({ isActive }) => {
                     return {
                       fontWeight: isActive ? "medium" : "",
-                      "text-decoration": isActive ? "underline" : "",
+                      textDecoration: isActive ? "underline" : "",
                     };
                   }}
                 >

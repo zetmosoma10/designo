@@ -47,7 +47,7 @@ const NavBar = () => {
                     style={({ isActive }) => {
                       return {
                         fontWeight: isActive ? "medium" : "",
-                        "text-decoration": isActive ? "underline" : "",
+                        textDecoration: isActive ? "underline" : "",
                       };
                     }}
                   >
@@ -75,7 +75,7 @@ const NavBar = () => {
         </div>
         {toggle && (
           <div className="absolute top-[58px] left-0 w-full md:hidden">
-            <SideBar />
+            <SideBar removeNav={removeNav} />
           </div>
         )}
       </nav>
