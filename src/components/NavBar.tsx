@@ -19,14 +19,14 @@ const NavBar = () => {
 
   useEffect(() => {
     if (toggle) {
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("no-scroll");
     } else {
-      document.body.style.overflow = "";
+      document.body.classList.remove("no-scroll");
     }
 
-    // Cleanup function to reset overflow when component unmounts
+    // Cleanup on component unmount
     return () => {
-      document.body.style.overflow = "";
+      document.body.classList.remove("no-scroll");
     };
   }, [toggle]);
 
