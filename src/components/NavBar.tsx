@@ -44,6 +44,12 @@ const NavBar = () => {
                   <NavLink
                     className="text-dark_grey text-sm tracking-[2px] hover:underline"
                     to={item.to}
+                    style={({ isActive }) => {
+                      return {
+                        fontWeight: isActive ? "medium" : "",
+                        "text-decoration": isActive ? "underline" : "",
+                      };
+                    }}
                   >
                     {item.link}
                   </NavLink>

@@ -21,7 +21,16 @@ const Footer = () => {
                 className="hover:underline transition-all duration-150"
                 key={item.link}
               >
-                <NavLink to={item.to} className="text-base tracking-[2px]">
+                <NavLink
+                  to={item.to}
+                  className="text-base tracking-[2px]"
+                  style={({ isActive }) => {
+                    return {
+                      fontWeight: isActive ? "medium" : "",
+                      "text-decoration": isActive ? "underline" : "",
+                    };
+                  }}
+                >
                   {item.link}
                 </NavLink>
               </li>
