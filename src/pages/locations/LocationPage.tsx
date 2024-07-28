@@ -1,4 +1,3 @@
-import React from "react";
 import LocationLayoutComponent from "./sections/LocationLayoutComponent";
 
 const LocationPage = () => {

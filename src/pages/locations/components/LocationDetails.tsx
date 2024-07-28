@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Props {
   address1: string;
   address2: string;

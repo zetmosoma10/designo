@@ -16,10 +16,10 @@ const Layout = () => {
       <NavBar />
       <Outlet />
       <div className="grid mt-[120px] ">
-        <div className="max-container mb-[-150px] lg:mb-[-100px]">
+        <div className="max-container mb-[-150px] lg:mb-[-100px] z-10">
           <CTA />
         </div>
-        <div className="-z-10">
+        <div className="">
           <Footer />
         </div>
       </div>

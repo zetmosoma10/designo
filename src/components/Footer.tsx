@@ -32,13 +32,13 @@ const Footer = () => {
           <div className="md:flex md:items-center md:space-x-12">
             <ul className="text-white text-opacity-50">
               <li className="font-bold">Designo Central Office</li>
-              <li>3886 Wellington Street</li>
-              <li>Toronto, Ontario M9C 3J5</li>
+              <li>Cedar Rd, Fourways</li>
+              <li>Sandton, 2055</li>
             </ul>
             <ul className="text-white text-opacity-50 mt-10 md:mt-0">
               <li className="font-bold">Contact Us (Central Office)</li>
-              <li>P : +1 253-863-8967</li>
-              <li>M : contact@designo.co</li>
+              <li>P : +27 72 883 9417</li>
+              <li>M : isometrixessouthafrica@gmail.com</li>
             </ul>
           </div>
           <ul className="md:self-end flex items-center justify-between text-peach space-x-4 mt-10 md:mt-0">
