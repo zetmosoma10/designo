@@ -20,8 +20,14 @@ DefaultIcon.mergeOptions({
   ).toString(),
 });
 
-const MapComponent = () => {
-  const position: [number, number] = [51.505, -0.09];
+interface Props {
+  latitude: number;
+  longitude: number;
+  name: string;
+}
+
+const MapComponent = ({ latitude, longitude, name }: Props) => {
+  const position: [number, number] = [latitude, longitude];
   return (
     <MapContainer
       center={position}
@@ -34,9 +40,7 @@ const MapComponent = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={position}>
-        <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
+        <Popup>{name}</Popup>
       </Marker>
     </MapContainer>
   );

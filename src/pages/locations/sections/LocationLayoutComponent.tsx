@@ -1,29 +1,59 @@
 import MapComponent from "../components/MapComponent";
 import LocationDetails from "../components/LocationDetails";
-
+//,
 const LocationLayoutComponent = () => {
   return (
     <section className="space-y-10 md:space-y-28  md:max-container lg:space-y-8">
       <div className="location ">
         <div className="order-1 lg:order-2 md:rounded-3xl md:overflow-hidden lg:w-[350px] ">
-          <MapComponent />
+          <MapComponent
+            latitude={-26.015959}
+            longitude={27.999823}
+            name="Matrixes Warehouse"
+          />
         </div>
         <div className="order-2 lg:order-1 w-full">
-          <LocationDetails />
+          <LocationDetails
+            country="South Africa"
+            address1="Cedar Rd, Fourways"
+            address2="Sandton, 2055"
+            email="isometrixes@gmail.com"
+            phone="+27 72 883 9417"
+          />
         </div>
       </div>
       <div className="location">
         <div className=" md:rounded-3xl md:overflow-hidden lg:w-[350px]">
-          <MapComponent />
+          <MapComponent
+            latitude={52.516939}
+            longitude={13.389843}
+            name="Matrixes Warehouse"
+          />
         </div>
-        <LocationDetails />
+        <LocationDetails
+          country="Germany"
+          address1="B2 21-19"
+          address2="10117 Berlin"
+          email="isometrixes@gmail.com"
+          phone="+27 72 883 9417"
+        />
       </div>
       <div className="location">
         <div className="order-1 lg:order-2 md:rounded-3xl md:overflow-hidden lg:w-[350px]">
-          <MapComponent />
+          <MapComponent
+            latitude={40.698829}
+            longitude={-73.973889}
+            name="Matrixes Warehouse"
+          />
         </div>
         <div className="order-2 lg:order-1 w-full">
-          <LocationDetails />
+          <LocationDetails
+            country="USA"
+            address1="6th St, Brooklyn"
+            address2="NY 11205, USA"
+            email="isometrixes@gmail.com"
+            phone="+27 72 883 9417"
+          />
         </div>
       </div>
     </section>
