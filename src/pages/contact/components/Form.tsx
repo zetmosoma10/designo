@@ -3,6 +3,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
 import Button from "../../../components/Button";
 import errorIcon from "../../../assets/contact/desktop/icon-error.svg";
+import { toast, ToastContainer } from "react-toastify";
 
 const schema = z.object({
   name: z.string().min(3, { message: "Name must at least 3 characters." }),
@@ -25,7 +26,7 @@ const Form = () => {
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = (data: FieldValues) => {
-    // toast(`${data.name} thanks for your support, we’ll get in touch shortly.`);
+    toast(`${data.name} thanks for your support, we’ll get in touch shortly.`);
     reset();
   };
   return (
@@ -79,7 +80,7 @@ const Form = () => {
       <Button type="button" className="self-center md:self-end px-12 ">
         Submit
       </Button>
-      {/* <ToastContainer position="top-center" /> */}
+      <ToastContainer position="top-center" />
     </form>
   );
 };
