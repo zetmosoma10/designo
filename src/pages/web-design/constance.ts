@@ -1,39 +1,45 @@
+import bankingImg from "../../assets/MyAssets/banking.png";
+import bookmarkImg from "../../assets/MyAssets/bookmark.png";
+import cofferoasterImg from "../../assets/MyAssets/coffeeroasters.png";
+import restcountriesImg from "../../assets/MyAssets/countries.png";
+import payapiImg from "../../assets/MyAssets/payapi2.png";
 import blogrImg from "../../assets/web-design/desktop/image-blogr.jpg";
-import builderImg from "../../assets/web-design/desktop/image-builder.jpg";
-import campImg from "../../assets/web-design/desktop/image-camp.jpg";
-import expressImg from "../../assets/web-design/desktop/image-express.jpg";
-import photonImg from "../../assets/web-design/desktop/image-photon.jpg";
-import transferImg from "../../assets/web-design/desktop/image-transfer.jpg";
 
 export const webDesignData = [
   {
     img: blogrImg,
     header: "blogr",
     text: "Blogr is a platform for creating an online blog or publication",
+    to: "https://blogr-landing-page-zet.netlify.app/",
   },
   {
-    img: builderImg,
-    header: "builder",
-    text: "Connects users with local contractors based on their location",
+    img: payapiImg,
+    header: "payapi",
+    text: "Start building with our APIs for absolutely free",
+    to: "https://payapi-zet.vercel.app/",
   },
   {
-    img: campImg,
-    header: "camp",
+    img: bookmarkImg,
+    header: "bookmark",
     text: "Get expert training in coding, data, design, and digital marketing",
+    to: "https://bookmark-landing-page-zet.netlify.app/",
   },
   {
-    img: expressImg,
-    header: "express",
-    text: "A multi-carrier shipping website for ecommerce businesses",
+    img: bankingImg,
+    header: "digital banking",
+    text: "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving and many more.",
+    to: "https://easybank-zet.netlify.app/",
   },
   {
-    img: photonImg,
-    header: "photon",
-    text: "A state-of-the-art music player with high-resolution audio and DSP effects",
+    img: cofferoasterImg,
+    header: "coffee roaster",
+    text: "Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule",
+    to: "https://coffee-roasterz.netlify.app/",
   },
   {
-    img: transferImg,
-    header: "transfering",
-    text: "Site for low-cost money transfers and sending money within seconds",
+    img: restcountriesImg,
+    header: "countries data",
+    text: "Find more information about all the countries on earth.",
+    to: "https://rest-countries-zet.netlify.app/",
   },
 ];

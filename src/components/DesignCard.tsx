@@ -1,14 +1,19 @@
-import React from "react";
-import img from "../assets/app-design/desktop/image-loopstudios.jpg";
+import { Link } from "react-router-dom";
 
 interface Props {
   img: string;
   header: string;
   text: string;
+  to: string;
 }
-const DesignCard = ({ img, header, text }: Props) => {
+const DesignCard = ({ img, header, text, to }: Props) => {
   return (
-    <article className="grid lg:grid-cols-1 rounded-3xl  overflow-hidden">
+    <Link
+      to={to}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="grid lg:grid-cols-1 rounded-3xl hover:shadow-xl  overflow-hidden"
+    >
       <img className="w-full" src={img} alt="" />
       <div className=" bg-very_light_peach text-center p-8">
         <div>
@@ -18,7 +23,7 @@ const DesignCard = ({ img, header, text }: Props) => {
           <p className="text-dark_grey text-base mt-6">{text}</p>
         </div>
       </div>
-    </article>
+    </Link>
   );
 };
 
