@@ -1,33 +1,38 @@
-import airfilterImg from "../../assets/app-design/desktop/image-airfilter.jpg";
-import eyecamImg from "../../assets/app-design/desktop/image-eyecam.jpg";
-import faceitImg from "../../assets/app-design/desktop/image-faceit.jpg";
-import loopstudioImg from "../../assets/app-design/desktop/image-loopstudios.jpg";
-import todoImg from "../../assets/app-design/desktop/image-todo.jpg";
+import adviceImg from "../../assets/MyAssets/advice.png";
+import interactiveImg from "../../assets/MyAssets/interactive2.png";
+import newsletterImg from "../../assets/MyAssets/newsletter.png";
+import nftImg from "../../assets/MyAssets/nft2.png";
+import tipcalculatorImg from "../../assets/MyAssets/tipcalculator2.png";
 
 export const appDesignData = [
   {
-    img: airfilterImg,
-    header: "airfilter",
-    text: "Solving the problem of poor indoor air quality by filtering the air",
+    img: adviceImg,
+    header: "advice generator",
+    text: "Get best random advice from this API powered app.",
+    to: "https://zetmosoma10.github.io/Advice-generator-app/",
   },
   {
-    img: eyecamImg,
-    header: "eyecam",
-    text: "Product that lets you edit your favorite photos and videos at any time",
+    img: tipcalculatorImg,
+    header: "tip calculator",
+    text: "This app calculate the correct tip and total cost of the bill per person",
+    to: "https://zetmosoma10.github.io/tip-calculator/",
   },
   {
-    img: faceitImg,
-    header: "faceit",
-    text: "Get to meet your favorite internet superstar with the faceit app",
+    img: newsletterImg,
+    header: "news letter",
+    text: "Join 60,000+ product managers receiving monthly updates.",
+    to: "https://zetmosoma10.github.io/Newsletter-sign-up/",
   },
   {
-    img: loopstudioImg,
-    header: "loopstudio",
-    text: "A VR experience app made for Loopstudios",
+    img: interactiveImg,
+    header: "interactive card",
+    text: "A interactive experience app made for Loopstudios",
+    to: "https://zetmosoma10.github.io/Interactive-rating-component/",
   },
   {
-    img: todoImg,
-    header: "todo",
-    text: "A todo app that features cloud sync with light and dark mode",
+    img: nftImg,
+    header: "NFT card",
+    text: "Our Equilibrium collection promotes balance and calm",
+    to: "https://zetmosoma10.github.io/NFT-preview-card/",
   },
 ];
