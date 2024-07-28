@@ -7,23 +7,23 @@ const DesignsShowGrid = () => {
         title="Web Designs"
         to="/web-designs"
         mobileBgImg="bg-webMobileImg"
-        tabletBgImg="md:bg-webTabletImg"
-        desktopBgImg="lg:bg-webDesktopLargeImg"
+        tabletBgImg="bg-webTabletImg"
+        desktopBgImg="bg-webDesktopLargeImg"
       />
       <div className="grid gap-y-6">
         <DesignShowCard
           title="App Designs"
           to="/app-designs"
           mobileBgImg="bg-appMobileImg"
-          tabletBgImg="md:bg-appTabletImg"
-          desktopBgImg="lg:bg-appDesktopImg"
+          tabletBgImg="bg-appTabletImg"
+          desktopBgImg="bg-appDesktopImg"
         />
         <DesignShowCard
           title="Graphic Designs"
           to="/graphic-designs"
           mobileBgImg="bg-graphicMobileImg"
-          tabletBgImg="md:bg-graphicTabletImg"
-          desktopBgImg="lg:bg-graphicDesktopImg"
+          tabletBgImg="bg-graphicTabletImg"
+          desktopBgImg="bg-graphicDesktopImg"
         />
       </div>
     </section>
