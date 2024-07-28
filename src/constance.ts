@@ -3,9 +3,9 @@ import canadaImg from "./assets/shared/desktop/illustration-canada.svg";
 import unitedKingdomImg from "./assets/shared/desktop/illustration-united-kingdom.svg";
 
 export const incentiveLocationData = [
-  { img: canadaImg, title: "CANADA" },
-  { img: australiaImg, title: "AUSTRALIA" },
-  { img: unitedKingdomImg, title: "UNITED KINGDOM" },
+  { img: canadaImg, title: "SOUTH AFRICA" },
+  { img: australiaImg, title: "GERMANY" },
+  { img: unitedKingdomImg, title: "USA" },
 ];
 
 export const navLinks = [
