@@ -1,4 +1,3 @@
-import React from "react";
 import AboutHero from "./components/AboutHero";
 import TalentCard from "./components/TalentCard";
 import IncentivesLocation from "../../components/IncentivesLocation";
