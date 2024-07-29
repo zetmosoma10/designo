@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import LocationLayoutComponent from "./sections/LocationLayoutComponent";
 import { motion } from "framer-motion";
 
@@ -20,6 +21,9 @@ const LocationPage = () => {
       initial="hidden"
       animate="visible"
     >
+      <Helmet>
+        <title>Disigno | Locations</title>
+      </Helmet>
       <LocationLayoutComponent />
     </motion.section>
   );

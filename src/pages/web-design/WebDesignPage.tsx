@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import DesignCard from "../../components/DesignCard";
 import DesignMultiGrid from "../../components/DesignMultiGrid";
 import DesignsHeader from "../../components/DesignsHeaders/DesignsHeader";
@@ -9,6 +10,9 @@ import { webDesignData } from "./constance";
 const WebDesignPage = () => {
   return (
     <div className="space-y-[120px] md:space-y-[160px]">
+      <Helmet>
+        <title>Disigno | Web Designs</title>
+      </Helmet>
       <DesignsHeader>
         <DesignsTitle>Web Design</DesignsTitle>
         <DesignsText>

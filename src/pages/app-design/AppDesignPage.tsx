@@ -5,10 +5,14 @@ import DesignMultiGrid from "../../components/DesignMultiGrid";
 import DesignCard from "../../components/DesignCard";
 import DesignShowCard from "../../components/DesignShowCard";
 import { appDesignData } from "./constance";
+import { Helmet } from "react-helmet-async";
 
 const AppDesignPage = () => {
   return (
     <div className="space-y-[120px] md:space-y-[160px]">
+      <Helmet>
+        <title>Disigno | App Designs</title>
+      </Helmet>
       <DesignsHeader>
         <DesignsTitle>App Design</DesignsTitle>
         <DesignsText>
