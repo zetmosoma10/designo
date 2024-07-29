@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import CTA from "../components/CTA";
-import { Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
   const { pathname } = useLocation();

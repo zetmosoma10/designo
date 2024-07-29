@@ -1,4 +1,3 @@
-import React from "react";
 import MobileImg from "../../../assets/about/mobile/image-about-hero.jpg";
 import TabletImg from "../../../assets/about/tablet/image-about-hero.jpg";
 import DesktopImg from "../../../assets/about/desktop/image-about-hero.jpg";

@@ -1,4 +1,3 @@
-import React from "react";
 import DesignsShowGrid from "../../components/DesignsShowGrid";
 import Incentives from "./sections/Incentives";
 import Hero from "./sections/Hero";

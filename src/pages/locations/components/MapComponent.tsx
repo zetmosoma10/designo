@@ -1,6 +1,6 @@
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 // Fix the default icon issue with Leaflet and Vite
 const DefaultIcon = L.Icon.Default as any;

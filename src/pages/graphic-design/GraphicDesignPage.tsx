@@ -1,4 +1,3 @@
-import React from "react";
 import DesignCard from "../../components/DesignCard";
 import DesignMultiGrid from "../../components/DesignMultiGrid";
 import DesignsHeader from "../../components/DesignsHeaders/DesignsHeader";
