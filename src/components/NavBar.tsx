@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import { navLinks } from "../constance";
 import logo from "../assets/shared/desktop/logo-dark.png";
 import hamburger from "../assets/shared/mobile/icon-hamburger.svg";
 import closeIcon from "../assets/shared/mobile/icon-close.svg";
 import SideBar from "./SideBar";
-import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
@@ -73,11 +74,19 @@ const NavBar = () => {
             )}
           </div>
         </div>
-        {toggle && (
-          <div className="absolute top-[58px] left-0 w-full md:hidden">
-            <SideBar removeNav={removeNav} />
-          </div>
-        )}
+        <AnimatePresence>
+          {toggle && (
+            <motion.div
+              className="absolute top-[58px] left-0 w-full md:hidden"
+              initial={{ x: "-100vw", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: "-100vw", opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <SideBar removeNav={removeNav} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </>
   );
