@@ -2,10 +2,29 @@ import React from "react";
 import MobileImg from "../../../assets/about/mobile/image-about-hero.jpg";
 import TabletImg from "../../../assets/about/tablet/image-about-hero.jpg";
 import DesktopImg from "../../../assets/about/desktop/image-about-hero.jpg";
+import { motion } from "framer-motion";
+
+const containerVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 0.5,
+    },
+  },
+};
 
 const AboutHero = () => {
   return (
-    <div className="card-container">
+    <motion.div
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      className="card-container"
+    >
       <picture className="w-full block order-1 lg:order-2">
         <source media="(max-width:767px)" srcSet={MobileImg} />
         <source
@@ -27,7 +46,7 @@ const AboutHero = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

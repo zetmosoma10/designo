@@ -8,7 +8,7 @@ const DesignsShowGrid = () => {
         to="/web-designs"
         mobileBgImg="bg-webMobileImg"
         tabletBgImg="bg-webTabletImg"
-        desktopBgImg="bg-webDesktopLargeImg"
+        desktopBgImg="bg-webDesktopLargeImgs"
       />
       <div className="grid gap-y-6">
         <DesignShowCard

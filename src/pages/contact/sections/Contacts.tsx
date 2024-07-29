@@ -1,8 +1,25 @@
+import { motion } from "framer-motion";
 import Form from "../components/Form";
+
+const containerVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 0.5,
+    },
+  },
+};
 
 const Contacts = () => {
   return (
-    <div
+    <motion.div
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
       className="bg-contact-circle bg-peach grid lg:grid-cols-2 gap-y-12 md:gap-y-10 lg:gap-x-20 
         px-6 md:px-14 py-[72px] lg:py-14 lg:px-24 md:max-container md:rounded-2xl"
     >
@@ -16,7 +33,7 @@ const Contacts = () => {
         </p>
       </div>
       <Form />
-    </div>
+    </motion.div>
   );
 };
 

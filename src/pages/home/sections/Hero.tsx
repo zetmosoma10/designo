@@ -1,9 +1,26 @@
 import Button from "../../../components/Button";
 import heroImg from "../../../assets/home/desktop/image-hero-phone.png";
+import { motion } from "framer-motion";
+
+const containerVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 0.5,
+    },
+  },
+};
 
 const Hero = () => {
   return (
-    <section
+    <motion.section
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
       className="hero-circle bg-peach text-white grid lg:grid-cols-2 lg:h-[600px] md:max-container md:rounded-3xl
         pt-20 lg:pt-0 lg:px-24 overflow-hidden"
     >
@@ -23,7 +40,7 @@ const Hero = () => {
         src={heroImg}
         alt=""
       />
-    </section>
+    </motion.section>
   );
 };
 
