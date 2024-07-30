@@ -77,7 +77,7 @@ const NavBar = () => {
         <AnimatePresence>
           {toggle && (
             <motion.div
-              className="absolute top-[58px] left-0 w-full md:hidden"
+              className="absolute top-[58px] left-0 w-full md:hidden z-[1001]"
               initial={{ x: "-100vw", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: "-100vw", opacity: 0 }}
